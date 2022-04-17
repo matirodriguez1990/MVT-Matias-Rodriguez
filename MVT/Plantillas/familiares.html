@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <u><h1>Familiares</h1></u>
+        {% for f in familiares %}
+        <h2><u>{{f.parentesco}}</u></h2>
+        <b>Nombre:</b> {{ f.nombre }} <br>
+        <b>Apellido:</b> {{ f.apellido }} <br>
+        <b>DNI:</b> {{ f.dni }} <br>
+        <b>Fecha de nacimiento:</b> {{ f.fechaNac }} <br>
+        <br>
+        
+        {% endfor %}
+    </p>
+</body>
+</html>
